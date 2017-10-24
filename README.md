@@ -15,5 +15,5 @@ The Fritzing File assumes and Arduino Uno R3. Pinout is the same on the SquareWe
 
 
 
-[Fritzing Diagram](./voltTestScheme.jpg)
+![Fritzing Diagram](./voltTestScheme.jpg)
 
