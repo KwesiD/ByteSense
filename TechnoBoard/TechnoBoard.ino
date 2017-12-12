@@ -25,6 +25,7 @@ void loop() {
   Serial.println("IR: " + getIR());
   Serial.println("X Tilt: " + String(getXTilt()));
   Serial.println("-------------------------------");
+  delay(1000);
 }
 
 
@@ -60,6 +61,9 @@ String getIR(){
     String code = padBytes(String(irCode.value,HEX)); //pads the bytes to an even number
     irrecv.resume(); // Receive the next value
     return code;
+  }
+  else{
+    return "none";
   }
 }
 
