@@ -16,6 +16,5 @@ HID Serial Monitor: https://github.com/rayshobby/hid-serial
 The Fritzing File assumes and Arduino Uno R3. Pinout is the same on the SquareWear. 
 
 
-
-![Fritzing Diagram](./voltTestScheme.jpg)  </strike>
+ </strike>
 
