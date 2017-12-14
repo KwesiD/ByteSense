@@ -1,6 +1,6 @@
 The direction of the project took a completely different turn. Will update the page shortly to reflect the dramatic changes :D 
 
-~~# Technopōl
+<strike># Technopōl</strike>
 
 
 This is the proect page for the Technopōl project (name subject to change).
