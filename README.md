@@ -1,6 +1,6 @@
 The direction of the project took a completely different turn. Will update the page shortly to reflect the dramatic changes :D 
 
-<strike># Technopōl</strike>
+<strike># Technopōl
 
 
 This is the proect page for the Technopōl project (name subject to change).
@@ -17,5 +17,5 @@ The Fritzing File assumes and Arduino Uno R3. Pinout is the same on the SquareWe
 
 
 
-![Fritzing Diagram](./voltTestScheme.jpg)~~
+![Fritzing Diagram](./voltTestScheme.jpg)  </strike>
 
