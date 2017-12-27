@@ -15,7 +15,7 @@ byte data;
 int irPin = 13; //digital pin 13
 int gyroPin = 0; //analog pin 0 for x axis on gyroscope
 int soundPin = 1; //analog pin 1 for sound sensor
-int photoPin = 2;
+int photoPin = 2; 
 int potPin = 3;
 /***********/
 
@@ -58,7 +58,7 @@ void setup() {
 
 void loop() {
   tempo = getPot(); //set the tempo from potentiometer
-  MIDI.sendControlChange(16,tempo,10); //channel 10 is a "magic channel" -Denis
+  MIDI.sendControlChange(16,tempo,10); 
   int velocity = getSoundLevel();
   setPitchBend();
   
@@ -68,7 +68,7 @@ void loop() {
   if((data == midi_clock) && (play_flag == 1)){
     
     if(drumCounter == 0) {
-      syncDrums(velocity); //TODO: Change from velocity to something else (or remove)
+      syncDrums(velocity); 
       
     }
 
@@ -77,8 +77,8 @@ void loop() {
       
     }
       
-    drumCounter = (drumCounter+1) % 11; //11 is the magic number 
-    brightCounter = (brightCounter+1) % 7;
+    drumCounter = (drumCounter+1) % 11; //24 clock events (0-23) per quarter note. 11 is an 8th note
+    brightCounter = (brightCounter+1) % 7; 
   }
 
   String IR = getIR();
@@ -170,22 +170,19 @@ String padBytes(String hex){
 
 void playChord(String chord[]){
   int len = sizeof(chord)*2;
-  //Serial.println("Len = " + String(len));
   for(int i = 0;i < len;i++){
-    //MIDI.sendNoteOn(strtoul(chord[i].c_str(),NULL,16),69,irChannel);
-   // Serial.print(chord[i] + "|");
+    MIDI.sendNoteOn(strtoul(chord[i].c_str(),NULL,16),69,irChannel);
   }
-  //Serial.println();
 }
 
 void getChord(String hex){
   String chord[hex.length()/2] = {};
   for(int i = 0;i < hex.length()/2;i++){
     chord[i] = String(hex[(2*i)]) + String(hex[(2*i)+1]);
-    //Serial.println("Note: " + chord[i]);
   }
   playChord(chord);
 }
+
 /*Note playing functions*/
 void setPitchBend(){
   MIDI.sendPitchBend(getXTilt(),bassChannel);
