@@ -1,7 +1,7 @@
 <h1>ByteSense</h1>
 
 <h2>About</h2>
-ByteSense is a project we (<a href="https://github.com/KwesiD">Kwesi Daniel</a> and <a href="https://github.com/deniskaydanov">Denis Kaydanov</a> developed for our Expressive Cultures: Sounds class at New York University.
+ByteSense is a project we (<a href="https://github.com/KwesiD">Kwesi Daniel</a> and <a href="https://github.com/deniskaydanov">Denis Kaydanov</a>) developed for our Expressive Cultures: Sounds class at New York University.
 
 ByteSense is an Arduino-Uno-based musical instrument that generate MIDI notes based on sensor inputs.
 The current sensors are:
