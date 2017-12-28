@@ -1,20 +1,22 @@
-The direction of the project took a completely different turn. Will update the page shortly to reflect the dramatic changes :D 
+<h1>ByteSense</h1>
 
-<strike># Technopōl
+<h2>About</h2>
+ByteSense is a project we developed for our Expressive Cultures: Sounds class at New York University.
 
+ByteSense is an Arduino-Uno-based musical instrument that generate MIDI notes based on sensor inputs.
+The current sensors are:
+1. IR Sensor
+2. Sound Sensor
+3. Photoresistor
+4. Gyrosensor
 
-This is the proect page for the Technopōl project (name subject to change).
+The tempo is controlled by MIDI events determined by a potentiometer. 
 
+ByteSense can work with any Digital Audio Workstation (DAW), but for the sake of the project, we worked with Abelton Live 9. 
 
-The project currently uses the SquareWear v2.2 (our Arduino died on us. Getting a new one soon)
-SquareWear: https://rayshobby.net/sqrwear/
+<h3>Note</h3>
+Our implementation receives MIDI clock events from Ableton. Clock events are sent by Abelton at a rate of 24 pules per quarter note <a href="https://en.wikipedia.org/wiki/MIDI_beat_clock">Wiki</a> Each sensor sends its own note on a particular pulse number (ie: every 12th pulse for 8th notes). 
 
-The HID serial monitor is for debugging purposes and is used by SquareWear in place of the built-in Arduino serial monitor.
-HID Serial Monitor: https://github.com/rayshobby/hid-serial
+<h2>Schematic</h2>
 
-
-The Fritzing File assumes and Arduino Uno R3. Pinout is the same on the SquareWear. 
-
-
- </strike>
-
+Coming Soon To A Repository Near You...
