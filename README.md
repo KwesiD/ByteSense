@@ -22,5 +22,4 @@ Analog voltage values from the sensors are arbitrarily scaled and converted into
 
 
 <h2>Schematic</h2>
-
-Coming Soon To A Repository Near You...
+![Schematic](ByteSense_bb.png)
